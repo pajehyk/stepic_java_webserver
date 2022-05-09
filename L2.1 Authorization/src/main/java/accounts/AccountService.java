@@ -27,6 +27,11 @@ public class AccountService {
         return loginToProfile.get(login);
     }
 
+    public boolean isRegistered(String login) {
+        return loginToProfile.containsKey(login);
+    }
+
+
     public UserProfile getUserBySessionId(String sessionId) {
         return sessionIdToProfile.get(sessionId);
     }

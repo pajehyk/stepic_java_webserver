@@ -10,7 +10,9 @@ package accountServer;
  */
 public class AccountServer implements AccountServerI {
     private int usersCount;
-    private int usersLimit;
+    private int usersLimit = 10;
+
+    public AccountServer() {}
 
     public AccountServer(int usersLimit) {
         this.usersCount = 0;
